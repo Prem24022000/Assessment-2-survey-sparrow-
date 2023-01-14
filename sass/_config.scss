@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+$fonts:(
+    inter: 'Inter',
+    poppins: 'Poppins'
+);
+
+$font-weights:(
+    "light": 300,
+    "regular": 400,
+    "bold": 500,
+    "exception": 600,
+    "bolder": 700
+);
+
+$primary-color: #30BF91;
+
+$secodary-color: #19B885;
+
+$text-color-white: white;
+
+$rare-color: #33393F;
+
+
+
+@function set-font-family($font-name){
+    @return map-get($fonts, $font-name)
+    
+}
+
+@function set-font-weight($font-weight){
+    @return map-get($font-weights, $font-weight);
+}
+
+ul li{
+    list-style: none;
+    font-family: map-get($fonts, inter), sans-serif;
+}
+

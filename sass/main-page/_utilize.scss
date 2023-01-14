@@ -1,0 +1,96 @@
+.utilize__page{
+    background-color: #F5FDFF;
+    text-align: center;
+    position: relative;
+    bottom: 102px;
+    z-index: -100;
+
+    &.container{
+        padding-top: 260px;
+        padding-bottom: 0;
+        margin-top: 50px;
+    }
+
+    h2{
+        width: 698px;
+        margin: auto;
+    }
+    
+    &--paragraph{
+        width: 967px;
+        margin: auto;
+        margin-top: 32px;
+        margin-bottom: 8px;
+        // padding-bottom: 64px;
+    }
+
+    // Utilize mid page
+
+    &__mid{
+        background-color: white;
+        padding-top: 70px;
+    }
+
+    &__points{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 13px;
+    }
+
+    &__point--list{
+        text-align: start;
+    }
+
+    &__point{
+        clip-path: polygon(94% 0, 100% 50%, 94% 100%, 0% 100%, 5% 50%, 0% 0%);
+        width: 250px;
+        height: 60px;
+        background-color: $secodary-color;
+        color: $text-color-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: set-font-weight(bold);
+        font-family: set-font-family(inter);
+        
+        &--start{
+            clip-path: polygon(94% 0, 100% 50%, 94% 100%, 0% 100%, 0 50%, 0% 0%);
+            border-radius: 6px;
+        }
+    }
+
+    &__mid--content{
+        margin-top: 72px;
+        padding-bottom: 72px;
+        width: 967px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    // Utilize end page
+
+    &__end{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    &__imgs--left{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+    }
+
+    &__img{
+        
+        p{
+            padding: 0;
+            font-weight: set-font-weight(bold);
+        }
+    }
+
+}

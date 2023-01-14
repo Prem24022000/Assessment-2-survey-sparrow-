@@ -1,0 +1,118 @@
+.main__page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 22px;
+
+    &.container{
+        padding-top: 83px;
+        padding-bottom: 83px;
+    }
+
+    &--paragraph{
+        margin: 32px 0;
+        width: 482px;
+        font-weight: set-font-weight(bold);
+    }
+
+    &--input-container{
+        margin-bottom: 14px;
+    }
+
+    &--input{
+        width: 268px;
+        padding: 14px 47px 17px 18px;
+        border-radius: 6px;
+        border: 1px solid #D8D8D8;
+        font-size: 16px;
+        font-weight: set-font-weight(light);
+
+        &-btn{
+            font-size: 18px;
+            
+            &.btn{
+                background-color: $secodary-color;
+                padding: 14px 22px 17px 22px;
+            }
+        }
+    }
+
+    &--lists{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        font-weight: set-font-weight(light);
+        width: 435px;
+    }
+
+    &--list{
+        list-style: disc;
+    }
+
+    &--first{
+        list-style: none;
+    }
+
+    &--last{
+        font-weight: set-font-weight(regular);
+        font-size: 14px;
+    }
+
+
+    // mid page of main page
+
+    &__mid{
+        text-align: center;
+        margin-top: 57px;
+       
+        
+
+        &--paragraph{
+            width: 1109px;
+            margin: auto;
+            margin-top: 32px;
+            margin-bottom: 28px;
+            
+        }
+
+        &--footer{
+            border-bottom: 2px solid black;
+            width: 94px;
+            margin: auto;
+            font-weight: set-font-weight(exception);
+        }
+    }
+
+    // end page of main page
+
+    &__end{
+        
+        color: $text-color-white;
+
+        &.container{
+            padding-top: 0;
+        }
+
+        &--lists{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $rare-color;
+            text-align: center;
+            padding: 61px 90px 56px;
+            gap: 20px;
+            position: relative;
+            top: 104px;
+
+            h4{
+                font-weight: set-font-weight(bolder);
+                margin-bottom: 24px;
+            }
+            p{
+                margin-bottom: 19px;
+            }
+            
+        }
+    }
+}

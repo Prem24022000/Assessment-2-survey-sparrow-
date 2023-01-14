@@ -1,0 +1,65 @@
+@import './config';
+@import './nav/nav';
+@import './main-page/main-front';
+@import './main-page/utilize';
+@import './main-page/enhancement';
+@import './main-page/features';
+@import './main-page/explanation';
+@import './main-page/reviews';
+@import './footer-page/footer';
+
+body{
+    height: 100vh;
+    line-height: 1.12;
+   
+}
+
+// Container is for 83px padding left and right and 19px left and right
+
+.container{
+    padding: 0 83px;
+}
+
+.btn{
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+
+h1,h2{
+    font-family: set-font-family(poppins);
+}
+
+h1{
+    font-size: 56px;
+    font-weight: set-font-weight(bolder);
+}
+
+h2{
+    font-size: 36px;
+    font-weight: set-font-weight(bolder);
+}
+
+h3{
+    font-size: 28px;
+}
+
+h4{
+    font-size: 20px;
+    font-family: set-font-family(inter);
+    font-weight: set-font-weight(bolder);
+}
+
+p{
+    font-size: 18px;
+    font-family: set-font-family(inter);
+    line-height: 1.5;
+    font-weight: set-font-weight(regular);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

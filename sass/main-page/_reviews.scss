@@ -1,0 +1,127 @@
+.reviews__page{
+    text-align: center;
+    
+    &.container{
+        padding-top: 301px;
+    }
+
+    &__header{
+        h2{
+            margin-bottom: 32px;
+        }
+
+        &--logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 87px;
+            margin-bottom: 160px;
+        }
+
+        &--midImg{
+            margin-left: 138px;
+            margin-right: 119px;
+            
+        }
+    }
+
+    &__mid{
+        h2{
+            margin-bottom: 104px;
+        }
+
+        &--logo{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+            row-gap: 124px;
+        }
+    }
+
+    &__end{
+        h2{
+            margin-top: 160px;
+            margin-bottom: 64px;
+        }
+
+        &--headerParagraph{
+            width: 949px;
+            margin: auto;
+            font-size: 22px;
+            font-weight: set-font-weight(light);
+        }
+
+        &--imgs{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 98px;
+
+            h3{
+                font-family: set-font-family(inter);
+                font-size: 26px;
+                font-weight: set-font-weight(regular);
+            }
+
+            p{
+                font-size: 12px;
+                font-weight: set-font-weight(light);
+                width: 124px;
+                
+            }
+        }
+
+        &--box{
+            text-align: center;
+            background-color: #364250;
+            color: $text-color-white;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            position: relative;
+            top: 150px;
+
+            h3{
+                font-size: 28px;
+                font-family: set-font-family(inter);
+            }
+
+            &--input{
+                margin-top: 32px;
+                display: flex;
+                justify-content: center;
+                input{
+                    width: 310px;
+                    padding-top: 16px;
+                    padding-bottom: 17px;
+                    padding-left: 16px;
+                    padding-right: 69px;
+                    border: none;
+                    font-size: 18px;
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+                }
+            }
+
+            &--btn.btn{
+                background-color: $secodary-color;
+                border-radius: 0%;
+                padding-top: 16px;
+                padding-bottom: 18px;
+                font-size: 18px;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+            }
+
+            p{
+                margin-top: 12px;
+                font-size: 14px;
+                font-weight: set-font-weight(regular);
+
+                span{
+                    font-weight: set-font-weight(bolder);
+                    border-bottom: 1px solid white;
+                }
+            }
+            
+        }
+    }
+}

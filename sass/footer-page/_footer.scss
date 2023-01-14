@@ -1,0 +1,36 @@
+.footer__page{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+
+    &.container{
+        padding-top: 260px;
+        padding-bottom: 1228px;
+    }
+
+    &__lists{
+        &--nested{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 32px;
+        }
+
+        p{
+            font-weight: set-font-weight(bold);
+            margin-bottom: 30px;
+        }
+
+        li{
+            color: rgba(13, 27, 30, 0.5);
+            margin-bottom: 15px;
+        }
+    }
+
+    &--logo{
+        position: absolute;
+        right: 60px;
+        top: 511px;
+    }
+}

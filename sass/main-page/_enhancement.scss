@@ -1,0 +1,115 @@
+.enhancement__page{
+    text-align: center;
+    &.container{
+        padding-top: 2px;
+        padding-bottom: 21px;
+    }
+
+    h3{
+        font-family: set-font-family(inter);
+        font-weight: set-font-weight(bold);
+        font-size: 22px;
+    }
+
+    &__header{
+        p{
+            width: 967px;
+            margin: auto;
+        }
+    }
+
+    &__mid{
+
+        &--header{
+            margin-top: 104px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 720px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            h4{
+                width: 100%;
+                margin-bottom: 24px;
+                font-family: set-font-family(inter);
+                font-weight: set-font-weight(exception);
+            }
+        }
+
+        &--paragraph{
+            width: 652px;
+            margin: auto;
+            font-size: 16px;
+            margin-bottom: 32px;
+        }
+
+        &--list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 720px;
+            margin: auto;
+            border-top: 1px solid #DEE4E5;
+            padding-top: 23px;
+            padding-bottom: 32px;
+            
+            h4{
+                width: 100%;
+                font-family: set-font-family(inter);
+                font-weight: set-font-weight(exception);
+            }
+        }
+    }
+
+    &__end{
+        background-color: $secodary-color;
+        color: $text-color-white;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        position: relative;
+        top: 150px;
+
+        h3{
+            font-size: 28px;
+        }
+
+        &--input{
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+            input{
+                width: 310px;
+                padding-top: 16px;
+                padding-bottom: 17px;
+                padding-left: 16px;
+                padding-right: 69px;
+                border: none;
+                font-size: 18px;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+            }
+        }
+
+        &--btn.btn{
+            background-color: #0D1B1E;
+            border-radius: 0%;
+            padding-top: 16px;
+            padding-bottom: 18px;
+            font-size: 18px;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+
+        p{
+            margin-top: 12px;
+            font-size: 14px;
+            font-weight: set-font-weight(regular);
+
+            span{
+                font-weight: set-font-weight(bolder);
+                border-bottom: 1px solid white;
+            }
+        }
+    }
+}
