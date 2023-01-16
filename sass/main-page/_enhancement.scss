@@ -1,16 +1,5 @@
-.expand{
-    padding: 10px;
-}
 
-.expand:hover{
-    cursor: pointer;
-    
-}
 
-.enhancement__page__mid--paragraph.paragraph{
-    height: 100%;
-    margin-top: 24px;
-}
 
 .enhancement__page{
     text-align: center;
@@ -37,47 +26,53 @@
     &__mid{
         margin-top: 104px;
 
-        &--content{
-            
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+
+
+        &--accordion{
             width: 720px;
-            margin-left: auto;
-            margin-right: auto;
-           
-            h4{
-                width: 100%;
-                // margin-bottom: 24px;
+            margin: auto;
+            border-bottom: 1px solid #DEE4E5;
+            padding-top: 23px;
+            
+            position: relative;
+            
+            .label{
                 font-family: set-font-family(inter);
                 font-weight: set-font-weight(exception);
+                margin-bottom: 24px;
+            }
+
+            .label::before{
+                content: '+';
+                position: absolute;
+                right: 20px;
+                
+            }
+
+            &-last{
+                border: none;
             }
         }
 
-
-
-        &--paragraph{
-            width: 652px;
-            margin: auto;
-            font-size: 16px;
-            // margin-top: 32px;
-
+        .content{
             height: 0;
             overflow: hidden;
+            transition: all 0.5s;
+        }
+        
+
+        &--contentBx.active .content{
+            height: 150px;
+            padding-bottom: 32px;
         }
 
-        &--list{
-            width: 720px;
-            margin: auto;
-            border-top: 1px solid #DEE4E5;
-            padding-top: 23px;
-            padding-bottom: 32px;
-            
-            h4{
-                width: 100%;
-                font-family: set-font-family(inter);
-                font-weight: set-font-weight(exception);
-            }
+        &--contentBx.active .label::before{
+            content: '-';
+        }
+
+
+        &--contentBx:hover{
+            cursor: pointer;
         }
     }
 
