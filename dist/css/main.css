@@ -14,9 +14,6 @@ ul li {
   padding-bottom: 0;
 }
 
-.nav {
-  margin-top: 23px;
-}
 .nav__items {
   display: flex;
   justify-content: space-between;
@@ -33,7 +30,53 @@ ul li {
   align-items: center;
 }
 .nav__item {
-  padding: 0 14px;
+  padding: 23px 14px;
+}
+.nav__item--dropMenu {
+  background-color: #24292e;
+  color: white;
+  display: none;
+  font-family: "Inter";
+  position: fixed;
+  left: 250px;
+  top: 70px;
+  padding: 20px;
+  width: 600px;
+  border-radius: 5px;
+  width: 750px;
+  padding: 60px 40px;
+}
+.nav__item--dropMenu-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__item--dropMenu-left li:hover, .nav__item--dropMenu-right li:hover {
+  cursor: pointer;
+}
+.nav__item--dropMenu h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  transition: all 0.2s;
+}
+.nav__item--dropMenu h4:hover {
+  color: #04BF73;
+}
+.nav__item--dropMenu p {
+  font-size: 14px;
+  font-weight: 300;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.nav__item:hover > .nav__item--dropMenu {
+  display: block;
+}
+.nav__item a > img {
+  transition: all 0.15s;
+  transition-timing-function: ease-in-out;
+}
+.nav__item:hover a > img {
+  transform: rotate(180deg);
 }
 .nav__item a {
   display: flex;
@@ -223,6 +266,19 @@ ul li {
   font-weight: 500;
 }
 
+.expand {
+  padding: 10px;
+}
+
+.expand:hover {
+  cursor: pointer;
+}
+
+.enhancement__page__mid--paragraph.paragraph {
+  height: 100%;
+  margin-top: 24px;
+}
+
 .enhancement__page {
   text-align: center;
 }
@@ -239,8 +295,10 @@ ul li {
   width: 967px;
   margin: auto;
 }
-.enhancement__page__mid--header {
+.enhancement__page__mid {
   margin-top: 104px;
+}
+.enhancement__page__mid--content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -248,9 +306,8 @@ ul li {
   margin-left: auto;
   margin-right: auto;
 }
-.enhancement__page__mid--header h4 {
+.enhancement__page__mid--content h4 {
   width: 100%;
-  margin-bottom: 24px;
   font-family: "Inter";
   font-weight: 600;
 }
@@ -258,12 +315,10 @@ ul li {
   width: 652px;
   margin: auto;
   font-size: 16px;
-  margin-bottom: 32px;
+  height: 0;
+  overflow: hidden;
 }
 .enhancement__page__mid--list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 720px;
   margin: auto;
   border-top: 1px solid #DEE4E5;

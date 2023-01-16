@@ -1,3 +1,18 @@
+.expand{
+    padding: 10px;
+}
+
+.expand:hover{
+    cursor: pointer;
+    
+}
+
+.enhancement__page__mid--paragraph.paragraph{
+    height: 100%;
+    margin-top: 24px;
+   
+}
+
 .enhancement__page{
     text-align: center;
     &.container{
@@ -18,36 +33,41 @@
         }
     }
 
-    &__mid{
+    
 
-        &--header{
-            margin-top: 104px;
+    &__mid{
+        margin-top: 104px;
+
+        &--content{
+            
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: 720px;
             margin-left: auto;
             margin-right: auto;
-            
+           
             h4{
                 width: 100%;
-                margin-bottom: 24px;
+                // margin-bottom: 24px;
                 font-family: set-font-family(inter);
                 font-weight: set-font-weight(exception);
             }
         }
 
+
+
         &--paragraph{
             width: 652px;
             margin: auto;
             font-size: 16px;
-            margin-bottom: 32px;
+            // margin-top: 32px;
+
+            height: 0;
+            overflow: hidden;
         }
 
         &--list{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             width: 720px;
             margin: auto;
             border-top: 1px solid #DEE4E5;
