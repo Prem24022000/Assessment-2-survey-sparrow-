@@ -631,8 +631,10 @@ ul li {
   font-weight: 500;
   margin-bottom: 30px;
 }
-.footer__page__lists li {
+.footer__page__lists a {
   color: rgba(13, 27, 30, 0.5);
+}
+.footer__page__lists li {
   margin-bottom: 15px;
 }
 .footer__page--logo {
