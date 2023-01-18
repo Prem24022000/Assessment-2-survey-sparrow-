@@ -1,8 +1,7 @@
 .footer__page{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 
     &.container{
         padding-top: 260px;
@@ -33,8 +32,6 @@
     }
 
     &--logo{
-        position: absolute;
-        right: 60px;
-        top: 511px;
+        grid-column: -2;
     }
 }

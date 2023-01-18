@@ -35,6 +35,7 @@
             grid-template-columns: repeat(4, 1fr);
             justify-items: center;
             row-gap: 124px;
+            
         }
     }
 
@@ -74,8 +75,7 @@
             text-align: center;
             background-color: #364250;
             color: $text-color-white;
-            padding-top: 60px;
-            padding-bottom: 60px;
+            padding: 60px 20px 60px;
             position: relative;
             top: 150px;
 

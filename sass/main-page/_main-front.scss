@@ -38,26 +38,11 @@
     }
 
     &--lists{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         font-size: 12px;
         font-weight: set-font-weight(light);
-        width: 435px;
+        font-family: set-font-family(inter);
     }
 
-    &--list{
-        list-style: disc;
-    }
-
-    &--first{
-        list-style: none;
-    }
-
-    &--last{
-        font-weight: set-font-weight(regular);
-        font-size: 14px;
-    }
 
 
     // mid page of main page

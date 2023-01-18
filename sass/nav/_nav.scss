@@ -8,16 +8,18 @@
 
     &__items{
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         align-items: center;
 
-
+        &--navs{
+            display: flex;
+        }
 
         &--left{
             display: flex;
             justify-content: space-between;
             align-items: center;
-
+            margin-left: 20px;
         }
 
         
@@ -26,6 +28,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-left: 210px;
         }
     }
 
@@ -116,10 +119,12 @@
 
         &--btn{
             padding-right: 0;
+            padding-left: 0;
         }
 
         &--logo{
             padding-left: 0;
+            display: inline;
         }
 
         p{

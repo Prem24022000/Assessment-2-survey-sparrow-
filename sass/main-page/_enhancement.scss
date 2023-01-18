@@ -62,7 +62,7 @@
         
 
         &--contentBx.active .content{
-            height: 150px;
+            height: 20vh;
             padding-bottom: 32px;
         }
 
@@ -79,8 +79,7 @@
     &__end{
         background-color: $secodary-color;
         color: $text-color-white;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding: 60px 20px 60px;
         position: relative;
         top: 150px;
 

@@ -7,6 +7,11 @@
 @import './main-page/explanation';
 @import './main-page/reviews';
 @import './footer-page/footer';
+@import './responsive';
+
+
+
+
 
 
 body{
@@ -17,9 +22,6 @@ body{
 
 // Container is for 83px padding left and right and 19px left and right
 
-.container{
-    padding: 0 83px;
-}
 
 .btn{
     background-color: $primary-color;
