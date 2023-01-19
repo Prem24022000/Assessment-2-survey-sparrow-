@@ -20,8 +20,14 @@
         width: 967px;
         margin: auto;
         margin-top: 32px;
-        margin-bottom: 8px;
+        margin-bottom: 64px;
         // padding-bottom: 64px;
+    }
+
+    &__point--list{
+        img{
+            margin-bottom: 6px;
+        }
     }
 
     // Utilize mid page

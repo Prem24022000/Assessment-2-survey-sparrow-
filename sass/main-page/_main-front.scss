@@ -26,6 +26,7 @@
         border: 1px solid #D8D8D8;
         font-size: 16px;
         font-weight: set-font-weight(light);
+        
 
         &-btn{
             font-size: 18px;
@@ -37,10 +38,39 @@
         }
     }
 
+    &--input::placeholder{
+        color: rgba(188, 188, 188, 1);
+        font-size: 16px;
+        font-weight: set-font-weight(light);
+        font-family: set-font-family(inter);
+    }
+
     &--lists{
         font-size: 12px;
         font-weight: set-font-weight(light);
         font-family: set-font-family(inter);
+        display: flex;
+        align-items: center;
+
+    }
+
+    &--list{
+        margin: 0 10px;
+        list-style-type: disc;
+
+        &--first{
+            margin: 0;
+            margin-right: 8px;
+            list-style: none;
+        }
+
+        &--color{
+            color: rgba(196, 196, 196, 1);
+
+            span{
+                color: black;
+            }
+        }
     }
 
 

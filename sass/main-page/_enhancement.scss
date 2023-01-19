@@ -9,8 +9,8 @@
     }
 
     h3{
-        font-family: set-font-family(inter);
-        font-weight: set-font-weight(bold);
+        font-family: set-font-family(poppins);
+        font-weight: set-font-weight(bolder);
         font-size: 22px;
     }
 
@@ -55,14 +55,14 @@
         }
 
         .content{
-            height: 0;
+            max-height: 0;
             overflow: hidden;
             transition: all 0.5s;
         }
         
 
         &--contentBx.active .content{
-            height: 20vh;
+            max-height: 80px;
             padding-bottom: 32px;
         }
 
@@ -101,6 +101,12 @@
                 font-size: 18px;
                 border-top-left-radius: 6px;
                 border-bottom-left-radius: 6px;
+            }
+
+            input::placeholder{
+                color: rgba(0, 0, 0, 0.5);
+                font-weight: set-font-weight(regular);
+                font-family: set-font-family(inter);
             }
         }
 

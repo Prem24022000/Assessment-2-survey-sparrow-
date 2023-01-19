@@ -4,11 +4,20 @@ const burgerIcon = document.querySelector('.burger');
 
 const navs = document.querySelector('.nav__items--navs');
 
-console.log(navs);
+
 
 contentBxs.forEach((contnetBx) => {
     contnetBx.addEventListener('click', function(){
+
         this.classList.toggle('active');
+
+        const content = contnetBx.children[1];
+
+        if(contnetBx.classList.contains('active')){
+            content.style.maxHeight = content.scrollHeight + 'px';
+        }else{
+            content.style.maxHeight = 0;
+        }
     })
 })
 

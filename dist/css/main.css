@@ -144,10 +144,45 @@ ul li {
   background-color: #19B885;
   padding: 14px 22px 17px 22px;
 }
+.main__page--input::-moz-placeholder {
+  color: rgb(188, 188, 188);
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Inter";
+}
+.main__page--input:-ms-input-placeholder {
+  color: rgb(188, 188, 188);
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Inter";
+}
+.main__page--input::placeholder {
+  color: rgb(188, 188, 188);
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Inter";
+}
 .main__page--lists {
   font-size: 12px;
   font-weight: 300;
   font-family: "Inter";
+  display: flex;
+  align-items: center;
+}
+.main__page--list {
+  margin: 0 10px;
+  list-style-type: disc;
+}
+.main__page--list--first {
+  margin: 0;
+  margin-right: 8px;
+  list-style: none;
+}
+.main__page--list--color {
+  color: rgb(196, 196, 196);
+}
+.main__page--list--color span {
+  color: black;
 }
 .main__page__mid {
   text-align: center;
@@ -210,7 +245,10 @@ ul li {
   width: 967px;
   margin: auto;
   margin-top: 32px;
-  margin-bottom: 8px;
+  margin-bottom: 64px;
+}
+.utilize__page__point--list img {
+  margin-bottom: 6px;
 }
 .utilize__page__mid {
   background-color: white;
@@ -275,8 +313,8 @@ ul li {
   padding-bottom: 21px;
 }
 .enhancement__page h3 {
-  font-family: "Inter";
-  font-weight: 500;
+  font-family: "Poppins";
+  font-weight: 700;
   font-size: 22px;
 }
 .enhancement__page__header p {
@@ -307,12 +345,12 @@ ul li {
   border: none;
 }
 .enhancement__page__mid .content {
-  height: 0;
+  max-height: 0;
   overflow: hidden;
   transition: all 0.5s;
 }
 .enhancement__page__mid--contentBx.active .content {
-  height: 20vh;
+  max-height: 80px;
   padding-bottom: 32px;
 }
 .enhancement__page__mid--contentBx.active .label::before {
@@ -346,6 +384,21 @@ ul li {
   font-size: 18px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
+}
+.enhancement__page__end--input input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-family: "Inter";
+}
+.enhancement__page__end--input input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-family: "Inter";
+}
+.enhancement__page__end--input input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-family: "Inter";
 }
 .enhancement__page__end--btn.btn {
   background-color: #0D1B1E;
@@ -396,9 +449,6 @@ ul li {
 .features__page__list h2 {
   margin-bottom: 32px;
 }
-.features__page__list__description {
-  order: 1;
-}
 
 .removeMargin {
   margin-bottom: 0%;
@@ -426,24 +476,27 @@ ul li {
   margin-bottom: 104px;
 }
 .explanation__page__lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 72px;
+  padding-right: 72px;
+  grid-column-gap: 166px;
+}
+.explanation__page__list {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 43px;
 }
-.explanation__page__list--flex {
-  position: relative;
+.explanation__page__list h4 {
+  margin-top: 0.85rem;
 }
-.explanation__page__list--flex img {
-  position: absolute;
-  left: -72px;
-  top: -10px;
+.explanation__page__list img {
+  width: 48px;
+  height: 48px;
+  margin-right: 24px;
 }
 .explanation__page__list--first {
   padding-top: 0;
 }
 .explanation__page__list--paragraph {
-  width: 482px;
   margin-top: 32px;
   margin-bottom: 66px;
 }
@@ -451,9 +504,6 @@ ul li {
   width: 482px;
   margin-top: 32px;
   margin-bottom: 10px;
-}
-.explanation__page__list--last {
-  width: 482px;
 }
 .explanation__page__end {
   text-align: center;
@@ -482,6 +532,21 @@ ul li {
   font-size: 18px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
+}
+.explanation__page__end--input input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-family: "Inter";
+}
+.explanation__page__end--input input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-family: "Inter";
+}
+.explanation__page__end--input input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-family: "Inter";
 }
 .explanation__page__end--btn.btn {
   background-color: #0D1B1E;
@@ -540,6 +605,7 @@ ul li {
   margin: auto;
   font-size: 22px;
   font-weight: 300;
+  color: rgba(0, 0, 0, 0.6);
 }
 .reviews__page__end--imgs {
   display: flex;
@@ -550,11 +616,14 @@ ul li {
   font-family: "Inter";
   font-size: 26px;
   font-weight: 400;
+  margin-top: 6px;
 }
 .reviews__page__end--imgs p {
   font-size: 12px;
   font-weight: 300;
   width: 124px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 4px;
 }
 .reviews__page__end--box {
   text-align: center;
@@ -583,6 +652,21 @@ ul li {
   font-size: 18px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
+}
+.reviews__page__end--box--input input::-moz-placeholder {
+  color: rgb(13, 27, 30);
+  font-weight: 400;
+  font-family: "Inter";
+}
+.reviews__page__end--box--input input:-ms-input-placeholder {
+  color: rgb(13, 27, 30);
+  font-weight: 400;
+  font-family: "Inter";
+}
+.reviews__page__end--box--input input::placeholder {
+  color: rgb(13, 27, 30);
+  font-weight: 400;
+  font-family: "Inter";
 }
 .reviews__page__end--box--btn.btn {
   background-color: #19B885;
@@ -701,6 +785,9 @@ ul li {
   .features__page__list--left p {
     text-align: center;
   }
+  .features__page__list__description {
+    order: 1;
+  }
   .features__page__list--right p {
     text-align: center;
   }
@@ -708,16 +795,12 @@ ul li {
     width: 100%;
   }
   .explanation__page__lists {
-    display: inline-block;
-    text-align: center;
+    grid-column-gap: 100px;
+    text-align: start;
     width: 100%;
   }
-  .explanation__page__list--flex img {
-    position: absolute;
-    left: 250px;
-  }
-  .explanation__page__list--paragraph-last {
-    width: 100%;
+  .explanation__page__list--paragraph {
+    margin-bottom: 100px;
   }
   .explanation__page__list--paragraph {
     width: 100%;
@@ -812,8 +895,11 @@ ul li {
   .explanation__page__header h2 {
     width: auto;
   }
-  .explanation__page__list--flex img {
-    left: 150px;
+  .explanation__page__lists {
+    grid-template-columns: auto;
+  }
+  .explanation__page__list--flex {
+    text-align: start;
   }
   .reviews__page__header--logo {
     display: block;
@@ -912,6 +998,9 @@ ul li {
   .features__page__list--right img, .features__page__list--left img {
     width: 100%;
   }
+  .explanation__page__lists {
+    padding: 0;
+  }
   .explanation__page__list--last {
     width: 0;
   }
@@ -920,7 +1009,7 @@ ul li {
   }
   .explanation__page__list--flex img {
     top: -60px;
-    left: 160px;
+    left: 90px;
   }
   .explanation__page__list--paragraph {
     margin-bottom: 100px;
@@ -989,13 +1078,13 @@ ul li {
   }
   .explanation__page__list--flex img {
     top: -60px;
-    left: 140px;
+    left: 70px;
   }
 }
 @media screen and (max-width: 320px) {
   .explanation__page__list--flex img {
     top: -60px;
-    left: 110px;
+    left: 45px;
   }
   .reviews__page__header--midImg {
     width: 100%;

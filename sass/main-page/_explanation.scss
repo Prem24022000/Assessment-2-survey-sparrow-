@@ -31,11 +31,11 @@
     }
 
     &__lists{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: 43px;
-        // margin-bottom: 28px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 72px;
+        padding-right: 72px;
+        grid-column-gap: 166px;
     }
 
 
@@ -44,21 +44,18 @@
     &__list{
         // padding: 54px 72px;
 
-        
-
-
-        &--flex{
-            
-            position: relative;
-
-            img{
-                position: absolute;
-                left: -72px;
-                top: -10px;
-            }
-
-            
+        h4{
+            margin-top: .85rem;
         }
+
+        img{
+            width: 48px;
+            height: 48px;
+            margin-right: 24px;
+        }
+        
+        display: flex;
+        
 
         &--first{
             padding-top: 0;
@@ -68,7 +65,7 @@
         
 
         &--paragraph{
-            width: 482px;
+            // width: 482px;
             margin-top: 32px;
             margin-bottom: 66px;
 
@@ -81,9 +78,7 @@
 
         
 
-        &--last{
-            width: 482px;
-        }
+        
     }
 
     &__end{
@@ -113,6 +108,12 @@
                 font-size: 18px;
                 border-top-left-radius: 6px;
                 border-bottom-left-radius: 6px;
+            }
+
+            input::placeholder{
+                color: rgba(0, 0, 0, 0.5);
+                font-weight: set-font-weight(regular);
+                font-family: set-font-family(inter);
             }
         }
 
