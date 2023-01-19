@@ -351,7 +351,7 @@ ul li {
 }
 .enhancement__page__mid--contentBx.active .content {
   max-height: 80px;
-  padding-bottom: 32px;
+  margin-bottom: 23px;
 }
 .enhancement__page__mid--contentBx.active .label::before {
   content: "-";
