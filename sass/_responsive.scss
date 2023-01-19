@@ -494,12 +494,7 @@
             }
         }
 
-        &__list--flex{
-            img{
-                top: -60px;
-                left: 90px;
-            }
-        }
+        
 
         &__list--paragraph{
             margin-bottom: 100px;
@@ -537,10 +532,14 @@
 
         &__end{
             &--imgs{
-                display: block;
+                
                 p{
                     width: 100%;
                 }
+            }
+
+            &--img-first,&--img-last{
+                display: none;
             }
 
             &--midImg{

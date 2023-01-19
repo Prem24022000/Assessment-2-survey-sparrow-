@@ -1007,10 +1007,6 @@ ul li {
   .explanation__page__header h2 {
     width: 100%;
   }
-  .explanation__page__list--flex img {
-    top: -60px;
-    left: 90px;
-  }
   .explanation__page__list--paragraph {
     margin-bottom: 100px;
   }
@@ -1036,11 +1032,11 @@ ul li {
   .reviews__page__header--midImg {
     margin: 0;
   }
-  .reviews__page__end--imgs {
-    display: block;
-  }
   .reviews__page__end--imgs p {
     width: 100%;
+  }
+  .reviews__page__end--img-first, .reviews__page__end--img-last {
+    display: none;
   }
   .reviews__page__end--midImg {
     margin-top: 20px;
