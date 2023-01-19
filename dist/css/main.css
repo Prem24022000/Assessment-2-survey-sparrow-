@@ -1076,16 +1076,8 @@ ul li {
   .footer__page__lists--nested {
     gap: 20px;
   }
-  .explanation__page__list--flex img {
-    top: -60px;
-    left: 70px;
-  }
 }
 @media screen and (max-width: 320px) {
-  .explanation__page__list--flex img {
-    top: -60px;
-    left: 45px;
-  }
   .reviews__page__header--midImg {
     width: 100%;
   }
@@ -1113,10 +1105,6 @@ ul li {
 @media screen and (width: 540px) {
   .utilize__page__imgs--right {
     width: 100%;
-  }
-  .explanation__page__list--flex img {
-    top: -60px;
-    left: 200px;
   }
   .reviews__page__header--midImg {
     margin: 0;

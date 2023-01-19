@@ -593,25 +593,11 @@
         }
     }
 
-    .explanation__page{
-        &__list--flex{
-            img{
-                top: -60px;
-                left:70px;
-            }
-        }
-    }
+    
 }
 
 @include mobile-s{
-    .explanation__page{
-        &__list--flex{
-            img{
-                top: -60px;
-                left: 45px;
-            }
-        }
-    }
+    
 
     .reviews__page{
         &__header--midImg{
@@ -666,14 +652,6 @@
         }
     }
 
-    .explanation__page{
-        &__list--flex{
-            img{
-                top: -60px;
-                left: 200px;
-            }
-        }
-    }
 
     .reviews__page{
         &__header--midImg{
